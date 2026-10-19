@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>精神内耗指数测验</title>
+    <script>
+      (function () {
+        var l = window.location;
+        if (l.pathname.indexOf('/quiz-pilot/') !== 0) { l.replace('/quiz-pilot/'); return; }
+        sessionStorage.setItem('spa-redirect', l.pathname + l.search + l.hash);
+        l.replace('/quiz-pilot/');
+      })();
+    </script>
+  </head>
+  <body>正在打开测验…</body>
+</html>
