@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // GitHub Pages SPA 回退恢复：配合站点根 404.html 使用
+      (function () {
+        var r = sessionStorage.getItem('spa-redirect');
+        if (r) {
+          sessionStorage.removeItem('spa-redirect');
+          window.history.replaceState(null, '', r);
+        }
+      })();
+    </script>
+    <title>精神内耗指数测验｜测验研究所</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
